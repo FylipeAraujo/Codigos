@@ -1,0 +1,22 @@
+public class zechico {
+    public static void main(String[]args){
+
+        double ze=1.10;
+        double chico=1.50;
+        int anos=0;
+
+        while(ze<chico){
+            ze=ze+0.03;
+            System.out.println("a altura de zé é de: " + ze +"\n");
+
+            chico=chico+0.02;
+            System.out.println("a altura de chico é de: " + chico +"\n");
+
+            anos=anos+1;
+
+            System.out.println("a quantidade de anos para as alturas serem iguais é de : " + anos + " anos");
+        }
+
+    }
+    
+}

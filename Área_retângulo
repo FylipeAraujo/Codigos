@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class retangulo {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Digite o valor para base de um retangulo:");
+            Float base =sc.nextFloat();
+
+            System.out.println("Digite o valor para altura de um retangulo:");
+            Float altura =sc.nextFloat();
+
+            float area;
+            area= ((base*altura)/2);
+
+            System.out.println("a area do retangulo é:" + area);
+        }
+
+
+
+    }}

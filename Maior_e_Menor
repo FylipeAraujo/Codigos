@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class maiormenor {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite um numero");
+            float numero= sc.nextFloat();
+
+            if (numero>10){
+                System.out.println("NUMERO MAIOR QUE DEZ");
+            }
+            else if (numero<10){
+                System.out.println("NUMERO MENOR QUE DEZ");
+            
+            }
+            else{
+                System.out.println("DIGITE UM NUMERO");
+            }
+    
+}}}

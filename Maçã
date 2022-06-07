@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class maca {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite a quantidade de maças compradas:");
+            float numero= sc.nextFloat();
+            
+            double maca1;
+            maca1=1.30;
+            double maca2;
+            maca2=1;
+            double soma;
+            soma=maca1*numero;
+            double soma2;
+            soma2=maca2*numero;
+
+            if (numero<12){
+                System.out.println("o valor por essa quantidade de maças é de:" + soma + " reais");
+            }
+            else if (numero>=12){
+                System.out.println("o valor por essa quantidade de maças é de:" + soma2 + "reais");
+            }
+
+
+}}}

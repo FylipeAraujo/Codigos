@@ -1,0 +1,51 @@
+ import java.util.Scanner;
+public class ATV {
+
+    public static void main(String[] args) {
+        System.out.println("calcule a nota semestral de um aluno");
+        try (Scanner sc = new Scanner(System.in)) {
+
+        System.out.println("digite a nota 1:");
+        float nota1= sc.nextFloat();
+
+                if (nota1>=0 && nota1<=10) {
+                    System.out.println("digite nota 2");
+                }
+                else{
+                    System.out.println("nota invalida");
+                }
+        
+        float nota2= sc.nextFloat();
+        float media1;
+
+                media1= (nota1+nota2)/2;
+                if (nota2>=0 && nota2<=10) {
+                    System.out.println("ok sua  primeira média é:" + media1);
+                }
+                else{
+                    System.out.println("nota invalida");
+                }
+        System.out.println("digite a nota 1 da segunda unidade:");
+        float notaa_1= sc.nextFloat();
+
+                if (notaa_1>=0 && notaa_1<=10) {
+                    System.out.println("digite a nota 2 da segunda unidade:");
+                }
+                else{
+                    System.out.println("nota invalida");
+                }
+
+        float notaa_2= sc.nextFloat();
+        float media2;
+        media2= (notaa_1+notaa_2)/2;
+        Float notasemestral;
+        notasemestral=(media1+media2)/2;
+
+                if (notaa_2>=0 && notaa_2<=10) {
+                    System.out.println("ok sua segunda média é:" + media2);
+                    System.out.println("sua media semestral é de :" + notasemestral);
+                }
+                else{
+                    System.out.println("nota invalida");
+        }}}}
+       

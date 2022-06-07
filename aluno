@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class aluno {
+    public static void main(String[]args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            double percentual1;
+            double percentual2;
+            double percentual3;
+            double menos10=0;
+            double menosmais=0;
+            double mais15=0;
+            
+        
+            for(int i=1;i<=10;i++){
+                System.out.println("Quantas vezes voce frenquentou o restaurante universitario?");
+                int frequencia= sc.nextInt();
+
+                if(frequencia<10){
+                    menos10=menos10+1;
+                }
+                if(frequencia>10&frequencia<=15){
+                    menosmais=menosmais+1;
+                }
+                if(frequencia>15){
+                    mais15=mais15+1;
+                }
+         
+            }
+            percentual1=(menos10*100)/10;
+            percentual2=(menosmais*100)/10;
+            percentual3=(mais15*100)/10;
+            System.out.println("o percentual de alunos que foram menos de 10 vezes é:"+ percentual1 + " %");
+            System.out.println("o percentual de alunos que foram mais de 10  vezes e menos de 15 vezes é:"+ percentual2 + " % +");
+            System.out.println("o percentual de alunos que foram mais de 15 vezes é:"+ percentual3+ " %");
+    }
+    
+}}

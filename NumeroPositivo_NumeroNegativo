@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class negativopositivo {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite um numero");
+            float numero= sc.nextFloat();
+
+            if (numero>0){
+                System.out.println("NUMERO É POSITIVO");
+            }
+            else if (numero<0){
+                System.out.println("NUMERO É NEGATIVO");
+            
+            }
+            else{
+                System.out.println("DIGITE UM NUMERO");
+            }
+    
+}}}

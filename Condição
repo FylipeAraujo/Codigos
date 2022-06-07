@@ -1,0 +1,16 @@
+public class quesito1 {
+    public static void main(String[]args) {
+        int soma=0;
+        int i=0;
+
+        while(i<11){
+            i=i+1;
+            System.out.println( "o numero é :" +i);
+
+            if(i<11){
+                soma=soma+i;
+                System.out.println("a soma é de:" + soma);
+            }
+        }
+    }
+}

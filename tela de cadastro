@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class cadastro {
+public static void main(String[] args) {
+    
+    System.out.println("BEM-VINDO A TELA DE CADASTRO DA SAFE LIFE");
+    try (Scanner sc = new Scanner(System.in)) {
+
+    System.out.println("Digite o seu nome:"+"\n");
+    String nome=sc.nextLine();
+
+    System.out.println("Digite o seu sobrenome:"+"\n");
+    String sobrenome=sc.nextLine();
+
+    System.out.println("Digite o seu cpf:"+"\n");
+    String cpf=sc.nextLine();
+    
+    System.out.println("Digite o sua idade:"+"\n");
+    int idade=sc.nextInt();
+
+    System.out.println("Digite o seu e-mail:"+"\n");
+    String email=sc.nextLine();
+
+    
+    System.out.println("Digite o seu senha:"+"\n");
+    String senha=sc.nextLine();
+    
+
+    System.out.println("Cadastro realizado com sucesso!");
+    System.out.println("Seja bem-vindo");
+
+}
+}}

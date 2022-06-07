@@ -1,0 +1,148 @@
+import java.util.Scanner;
+
+public class atv2{
+    public static void main(String[] args) {
+        
+        try (Scanner sc = new Scanner(System.in)) {
+        System.out.println("Digite uma letra:");
+        String letras= sc.nextLine();
+        
+            switch (letras) {
+                case "A":
+                    case "a":
+                        System.out.println("A letra A é a primeira do alfabeto!");
+                    break;
+
+                case "B":
+                    case "b":
+                        System.out.println("A letra B é a segunda do alfabeto!");
+                    break;
+
+                case "C":
+                    case "c":
+                        System.out.println("A letra C é a terceira do alfabeto!");
+                    break;
+
+                case "D":
+                    case "d":
+                        System.out.println("A letra D é a quarta do alfabeto!");
+                    break;
+
+                case "E":
+                    case "e":
+                        System.out.println("A letra E é a quinta do alfabeto!");
+                    break;
+                
+                case "F":
+                    case "f":
+                        System.out.println("A letra F é a sexta do alfabeto!");
+                    break;
+
+                case "G":
+                    case "g":
+                        System.out.println("A letra G é a sétima do alfabeto!");
+                    break;
+
+                case "H":
+                    case "h":
+                        System.out.println("A letra H é a oitava do alfabeto!");
+                    break;
+
+                case "I":
+                    case "i":
+                        System.out.println("A letra I é a nona do alfabeto!");
+                    break;
+                
+                case "J":
+                    case "j":
+                        System.out.println("A letra J é a decima do alfabeto!");
+                    break;
+
+                case "K":
+                    case "k":
+                        System.out.println("A letra K é a decima primeira do alfabeto!");
+                    break;
+
+                case "L":
+                    case "l":
+                        System.out.println("A letra L é a decima segunda do alfabeto!");
+                    break;
+
+                case "M":
+                    case "m":
+                        System.out.println("A letra M é a decima terceira do alfabeto!");
+                    break;
+
+                case "N":
+                    case "n":
+                        System.out.println("A letra N é a decima quarta do alfabeto!");
+                    break;
+
+                case "O":
+                    case "o":
+                        System.out.println("A letra O é a decima quinta do alfabeto!");
+                    break;
+                
+                case "P":
+                    case "p":
+                        System.out.println("A letra P é a decima sexta do alfabeto!");
+                    break;
+
+                case "Q":
+                    case "q":
+                        System.out.println("A letra Q é a decima setima do alfabeto!");
+                    break;
+
+                case "R":
+                    case "r":
+                        System.out.println("A letra R é a decima oitava do alfabeto!");
+                    break;
+                
+                case "S":
+                    case "s":
+                        System.out.println("A letra S é a decima nona do alfabeto!");
+                    break;
+
+                case "T":
+                    case "t":
+                        System.out.println("A letra T é a vigésima do alfabeto!");
+                    break;
+
+                case "U":
+                    case "u":
+                        System.out.println("A letra U é a vigésima primeira do alfabeto!");
+                    break;
+
+                case "V":
+                    case "v":
+                        System.out.println("A letra V é a vigesima segunda do alfabeto!");
+                    break;
+
+                case "W":
+                    case "w":
+                        System.out.println("A letra W é a vigesima terceira do alfabeto!");
+                    break;
+
+                case "X":
+                    case "x":
+                        System.out.println("A letra X é a vigesima quarta do alfabeto!");
+                    break;
+
+                case "Y":
+                    case "y":
+                        System.out.println("A letra Y é a vigesima quinta do alfabeto!");
+                    break;
+
+                case "Z":
+                    case "z":
+                        System.out.println("A letra Z é a vigesima sexta do alfabeto!");
+                    break;
+
+                default:
+                System.out.println("A letra é invalida");
+                    break;
+        }
+
+    
+       
+}}}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class salario {
+    public static void main(String[] args) {
+try (Scanner sc = new Scanner(System.in)) {
+        
+            System.out.println("Digite o valor do seu salario mensal:");
+            float salario= sc.nextFloat();
+
+            System.out.println("Digite o percentual de reajuste:");
+            float percentual= sc.nextFloat();
+
+
+            float reajuste;
+            reajuste= (percentual/100)*salario;
+            
+            float nvsalario;
+            nvsalario=  salario+reajuste;
+
+
+            System.out.println("o seu novo salario é" + nvsalario);
+        }
+}}

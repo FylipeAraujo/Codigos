@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class numeros {    
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite o  primeiro numero");
+            int num1= sc.nextInt();
+            System.out.println("Digite o segundo numero:");
+            int num2= sc.nextInt();
+            
+            if (num1==num2){
+                System.out.println("os valores não podem ser iguais");
+            }
+            else if ( num1 > num2){
+                System.out.println("o numero maior é:"+num1);
+            }
+            else if( num2>num1){
+                System.out.println(" o numero maior é:"+num2);
+            }
+
+
+}}}

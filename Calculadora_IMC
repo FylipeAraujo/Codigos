@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class IMC {
+    public static void main(String[] args) {
+        System.out.println("Bem-vindo a CALCULADORA SAÚDAVEL");
+        System.out.println("Vamos seguir com o seu cadastro para calcular o seu IMC!");
+        
+        try (Scanner sc = new Scanner(System.in)) {
+
+        System.out.println("Digite seu Nome:");
+        String nome = sc.nextLine();
+        
+        System.out.println(""+ nome +" Digite sua Idade:");
+        int idade = sc.nextInt();
+
+        System.out.println(""+ nome +" Digite seu Peso (kg):");
+        double peso = sc.nextDouble();
+       
+        System.out.println(""+ nome + " Digite sua Altura (M):");
+        double altura = sc.nextDouble();
+        
+        System.out.println("CADASTRO CONCLUIDO COM SUCESSO!");
+
+        System.out.println(""+ nome + " Deseja continuar para ver seu IMC, 1= SIM ou 2= NÃO?");
+        int opcao=sc.nextInt();
+        
+        if (opcao == 2){
+            System.out.println(""+ nome + " Obrigado pelo cadastro, volte sempre.");
+                return;
+        }
+        else{
+            System.out.println("Em instantes seu IMC será calculado!");   
+        }
+
+        double imc = (double) (peso/(altura*altura));
+        System.out.println(""+ nome + " Seu IMC é: " + imc);
+
+        if (imc >= 18.5 & imc <= 24.9) {
+            System.out.println(""+ nome + " você está saudável " );
+        }
+        else if (imc >=25.0 & imc <= 29.9) {
+             System.out.println(""+ nome + " você está no estado de sobrepeso");
+        }  
+        else if (imc >= 30.0 & imc <= 39.9) {
+            System.out.println( " " + nome + " você está no estado de obesidade");
+         } 
+         else{
+            System.out.println( " " + nome + " você está no estado de obesidade grave!");
+         } 
+        }
+}}

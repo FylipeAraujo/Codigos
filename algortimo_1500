@@ -1,0 +1,20 @@
+public class algoritmo {
+    public static void main(String[]args){
+         int soma;
+         soma=0;
+          for (int i=100; i<=1500;i++){
+            if(i%2==1){
+                soma=i+soma;
+          }
+        }
+           System.out.println("A resposta da letra A é:" +soma + "\n");
+
+           int qtd;
+           qtd=0;
+           for (int i=100; i<=1500;i++){
+            if(i%2==0){
+                qtd=qtd+1;   
+             }        
+        }
+     System.out.println("A resposta da letra B é:" +qtd + "\n");
+}}

@@ -1,0 +1,47 @@
+import java.util.Scanner;
+public class turma {
+    public static void main(String[]args){
+        int somaidade;
+        somaidade=0;
+        int qtdidade;
+        qtdidade=0;
+        double somaalt;
+        somaalt=0;
+        double qtdalt;
+        qtdalt=0;
+    try (Scanner sc = new Scanner(System.in)) {
+
+        for(int i=1; i<=45;i++){
+
+            
+
+                System.out.println("Digite sua idade:");
+                int idade= sc.nextInt();
+                System.out.println("Digite sua altura:");
+                double altura= sc.nextDouble();
+
+                    if(altura<1.70){
+                    somaidade= somaidade+idade;
+                    qtdidade= qtdidade+1;
+
+                     }
+                        if(idade>20){
+                        somaalt=somaalt+altura;
+                        qtdalt= qtdalt+1;
+                        }
+
+            
+        }
+        }
+        double mediaidade;
+        mediaidade=somaidade/qtdidade;
+        double mediaaltura;
+        mediaaltura=somaalt/qtdalt;
+        System.out.println("A idade média dos alunos com menos de 1,70m de altura é:" + mediaidade +" anos"+ "\n");
+        System.out.println("A altura média dos alunos com mais de 20 anos é de:" + mediaaltura + " metros"+ "\n");
+            
+
+                    
+        
+    }
+}

@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class opcao {
+    public static void main(String[] args) {
+
+    try (Scanner sc = new Scanner(System.in)) {
+        System.out.print("Digite um numero:");
+        Float numero =sc.nextFloat();
+
+        double raiz;
+        raiz= Math.sqrt(numero);
+        double metade;
+        metade =numero/2;
+        double porcen;
+        porcen= (numero*10)/100;
+        double dobro;
+        dobro=numero*2;
+
+        System.out.println("escolha uma opção: " +"\n" + "101-Raiz quadrada" + "\n" + "102-A metade" + "\n" + "103-10% do número" + "\n" + "104-O dobro");
+        
+        Integer opcao= sc.nextInt();
+
+        if (opcao==101){
+            System.out.println("a raiz quadrada do seu numero é:" + raiz);
+        }
+        else if (opcao==102){
+            System.out.println("a metade do seu numero é:" + metade);
+
+        }
+        else if (opcao==103){
+            System.out.println("a porcentagem do seu numero é:" + porcen);
+
+        }
+        else if (opcao==104){
+            System.out.println("o dobro do seu numero é:" + dobro);
+        }
+        else{
+            System.out.println("Opção invalida!!");
+        }
+    }
+
+
+
+}}

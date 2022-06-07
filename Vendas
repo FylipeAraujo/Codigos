@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class venda {
+    public static void main(String[] args){
+        System.out.println("Bem vindo a loja");
+
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Digite o valor da venda:");
+            Float numero =sc.nextFloat();
+
+            double vista;
+            vista= (numero-((10*numero)/100));
+            double prazo30;
+            prazo30= (numero-((5*numero)/100));
+            double prazo60;
+            prazo60= numero;
+            double prazo90;
+            prazo90= (numero+((5*numero)/100));
+            double cartd;
+            cartd=(numero-((8*numero)/100));
+            double cartc;
+            cartc= (numero-((7*numero)/100));
+
+            System.out.println("Escolha uma condição de pagamento a seguir:"+ "\n" +"1- VENDA A VISTA" +"\n"+ "2- Venda a Prazo 30 dias" + "\n" + "3-Venda a Prazo 60 dias" + "\n" + "4-Venda a Prazo com 90 dias" + "\n" + "5-Venda com cartão de débito" + "\n" + "6-Venda com cartão de crédito");
+
+            Integer condicao = sc.nextInt();
+            if (condicao==1){
+                System.out.println("A venda a vista ficou por:" + vista);
+            }
+            else if (condicao==2){
+                System.out.println("A venda a prazo de 30 dias ficou por:" + prazo30);
+
+            }
+            else if ( condicao==3){
+                System.out.println("A venda a prazo de 60 dias ficou por:" + prazo60);
+            }
+            else if ( condicao==4){
+                System.out.println("A venda a prazo de 90 dias ficou por:" + prazo90);
+            }
+            else if (condicao==5){
+                System.out.println("A venda no cartão de debito dias ficou por:" + cartd);
+            }
+            else if (condicao==6){
+                System.out.println("A venda no carão de credito ficou por:" + cartc);
+            }
+            else{
+                System.out.println("Condição invalida");
+
+            }
+        }
+
+    }
+}

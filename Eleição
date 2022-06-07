@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class eleicao {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Digite o numero total de eleitores:");
+            float eleitores= sc.nextFloat();
+
+            System.out.println("Digite o numero de votos brancos:");
+            float branco= sc.nextFloat();
+
+            System.out.println("Digite o numero de votos nulos:");
+            float nulo= sc.nextFloat();
+
+            System.out.println("Digite o numero de votos validos:");
+            float validos= sc.nextFloat();
+
+            float br;
+            br=((branco/eleitores)*100);
+
+            float nu;
+            nu=((nulo/eleitores)*100);
+
+            float va;
+            va=((validos/eleitores)*100);
+
+            System.out.println("o percentual de votos brancos em relação aos eleitores é:" + br + "%");
+            System.out.println("o percentual de votos nulos em relação aos eleitores é:" + nu + "%");
+            System.out.println("o percentual de votos validos em relação aos eleitores é:" + va + "%");
+        }

@@ -1,0 +1,16 @@
+public class impar {
+    public static void main(String[]args){
+        int soma;
+         soma=0;
+         for (int i=57; i<=901;i=i+2){
+           if(i%2==1){
+               System.out.println(i);
+         }
+            if(i%2==1){
+                soma=i+soma;
+          }
+        
+        System.out.println("\n"+ " a soma de todos esses numeros é:"+soma);
+}
+
+}}

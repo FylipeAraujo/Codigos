@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class clima {
+    public static void main(String[] args) {
+         try (Scanner sc = new Scanner(System.in)){
+
+        System.out.println("DATA (DD\"MM\"AAAA:)");
+
+        System.out.print("DIA:");
+        Integer dia =sc.nextInt();
+        System.out.print("MÊS:");
+        Integer mes= sc.nextInt();
+        System.out.print("ANO:");
+        Integer ano =sc.nextInt();
+
+        if (( dia>=20 && mes>=03 && mes<00)||(dia<=20 && mes>03 && mes<=06)){
+            System.out.println("HEMISFERIO SUL: OUTONO");
+            System.out.println("HEMISFERIO NORTE: PRIMAVERA");
+        }
+
+        else if ((dia>=21 && mes >=06 && mes<9)||(dia<=21 && mes<=9 && mes>6)){
+            System.out.println("HEMISFERIO SUL: INVERNO");
+            System.out.println("HEMISFERIO NORTE: VERÃO");
+        }
+        else if ((dia>=22 && mes>=9 && mes<12)||(dia<=20 && mes <=12 && mes>9)){
+            System.out.println("HEMISFERIO SUL: PRIMAVERA");
+            System.out.println("HEMISFERIO NORTE: OUTONO");
+        }
+        else if ((dia>=21 && mes==12)||(dia<=19&&mes<=03|| dia >=19 && mes>=01&&mes<03)){
+            System.out.println("HEMISFERIO SUL: VERÃO");
+            System.out.println("HEMISFERIO NORTE: INVERNO");
+        }
+        sc.close();
+
+}}}

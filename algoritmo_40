@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class algoritmo1_2 {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+
+            int qtdpar=0;
+            int qtdimp=0;
+            int qtdpos=0;
+            int qtdneg=0;
+
+            for (int i=1;i<=40;i++){
+                System.out.println("Digite um numero");
+                int num= sc.nextInt();
+    
+                if(num>0){
+                    qtdpos=qtdpos+1;
+                }
+                if(num<0){
+                    qtdneg=qtdneg+1;
+                }
+                if(num%2==0){
+                    qtdpar=qtdpar+1;
+                }
+                if(num%2==1){
+                    qtdimp=qtdimp+1;
+                }
+
+            }
+            System.out.println(qtdpos);
+            System.out.println(qtdneg);
+            System.out.println(qtdpar);
+            System.out.println(qtdimp);
+    }
+        
+    }}
+

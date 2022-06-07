@@ -1,0 +1,16 @@
+public class armazem {
+    public static void main(String[] args) {
+        String A;
+        A="10";
+        String B;
+        B="20";
+        String C;
+        C=A;
+        System.out.println("valores armazenados:" + "\n"+ A +"\n"+ B);
+        String troca1;
+        troca1=(A=B);
+        System.out.println("valores armazenados:" + troca1 );
+        String troca2;
+        troca2= C;
+        System.out.println("valores armazenados:" + troca2 );
+}}

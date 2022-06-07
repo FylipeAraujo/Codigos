@@ -1,0 +1,20 @@
+public class grupo5 {
+    public static void main(String[]args){
+
+    int soma;
+    soma=0;
+    int qtd;
+    qtd=0;
+    for (int i=0; i<=50;i++){
+        if(i>0){
+            soma=soma+i;
+
+        }
+        if(i<0){
+            qtd=qtd+1;
+        }
+    }
+    System.out.println(soma);
+    System.out.println(qtd);
+}
+}

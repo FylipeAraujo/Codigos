@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class voto {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite o ano atual:");
+            int ano= sc.nextInt();
+            System.out.println("Digite o ano de seu nascimento:");
+            int numero= sc.nextInt();
+            
+            int soma;
+            soma= ano-numero;
+
+            if (soma>=16){
+                System.out.println("Parabéns voce pode votar, você tem " + soma + " idade");
+            }
+            else if(soma<16){
+                System.out.println("Infelizmente voce não pode votar, você tem " + soma + " idade");
+            }
+            
+            else{
+                System.out.println("Digite uma idade");
+            }
+}}}

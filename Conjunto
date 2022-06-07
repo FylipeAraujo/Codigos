@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class conjunto {
+    public static void main(String[]args){
+        try (Scanner sc = new Scanner(System.in)) {
+        int qtdpar;
+        qtdpar=0;
+        int qtdimpar;
+        qtdimpar=0;
+        int cont;
+        cont=1;
+        int para;
+        para=2;
+
+        for( int i=0;i<=50;i++){
+            System.out.println("DIGITE UM NUMERO:");
+            int numero= sc.nextInt();
+
+            if(numero%2==0){
+                qtdpar=qtdpar+1;
+            }
+            if(numero%2==1){
+                qtdimpar=qtdimpar+1;
+            }
+
+            System.out.println("se quiser continuar digite 1, se quiser parar digite 2");
+            int opcao= sc.nextInt();
+            if(opcao==cont){
+
+            }
+            if(opcao==para){
+                break;
+            }
+ 
+        }
+            System.out.println("a quantidade de numero impares é de : " + qtdimpar);
+            System.out.println("a quantidade de numero pares é de : " + qtdpar);
+    }
+}}

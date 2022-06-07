@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class antecessor {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Digite o valor:");
+            Float numero =sc.nextFloat();
+
+            float antecessor;
+            antecessor=numero-1;
+            System.out.println("o antecessor do numero é:" + antecessor);
+        }
+}}

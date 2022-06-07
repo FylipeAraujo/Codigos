@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class estoque {
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite a quantidade atual de um produto em estoque:");
+            double atual= sc.nextDouble();
+            System.out.println("Digite a quantidade maxima de um produto em estoque:");
+            double maxima= sc.nextDouble();
+            System.out.println("Digite a quantidade minima de um produto em estoque:");
+            double minima= sc.nextDouble();
+
+            double qtdmedia;
+            qtdmedia=((maxima+minima)/2);
+            System.out.println("Sua quantidade media é de:" + qtdmedia + "\n");
+
+            if(atual>=qtdmedia){
+                System.out.println("Não efetuar a compra");
+            }
+            else{
+                System.out.println("Efetuar compra");
+            }
+}}}

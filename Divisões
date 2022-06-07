@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class qts6 {
+    public static void main(String[]args){
+        try (Scanner sc = new Scanner(System.in)) {
+
+            
+            System.out.println("Digite um numero:");
+            int numero= sc.nextInt();
+            
+            int numconta;
+            numconta=0;
+
+            double conta;
+            conta=numero/2;
+
+            while(conta>=1){
+                System.out.println("o resultado da divisão é de: " + conta);
+                conta=conta/2;
+
+                numconta=numconta+1;
+                System.out.println("a quantidade de contas foi de :" + numconta);
+            }
+
+
+}}}

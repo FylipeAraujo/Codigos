@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class salario2 {
+    
+    public static void main(String[] args) {
+
+        try (Scanner sc = new Scanner(System.in)) {
+
+            System.out.println("Digite o seu salario fixo:");
+            double salariof= sc.nextDouble();
+            System.out.println("Digite o valor total de vendas:");
+            double vendas= sc.nextDouble();
+
+            double salariot;
+            double acrescimo;
+            double acrescimom;
+            if(vendas<=1500){
+                acrescimo=(vendas*0.03);
+                salariot=salariof+acrescimo;
+                System.out.println("Seu salario total é de :" + salariot + "reais");
+            }
+            else if (vendas>1501){
+                acrescimom=(vendas-1500);
+                acrescimo=(vendas*0.05);
+                salariot=salariof+acrescimo;
+                System.out.println("Seu salario total é de :" + salariot + "reais");
+            }
+                
+            }}}
